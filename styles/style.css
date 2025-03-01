@@ -1,0 +1,198 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  /* Buraya istediğin ismi verebilirsin */
+  src: url("../fonts/Gayathri Segoe UI.ttf") format("truetype");
+  /* Buraya font dosyanın adını doğru yazmalısın */
+}
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Burada yukarıda verdiğin ismi kullanmalısın */
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 30px;
+}
+.wrapper .images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 150px;
+}
+@media (max-width: 880px) {
+  .wrapper .images {
+    display: none;
+  }
+}
+.wrapper .login {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 420px;
+  margin-bottom: 310px;
+}
+.wrapper .login form {
+  border: 1px solid #DBDBDB;
+}
+.wrapper .login form img {
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.wrapper .login form .inputs {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapper .login form .inputs input {
+  border: 1px solid #DBDBDB;
+  background-color: #FAFAFA;
+  font-size: 11.5px;
+  padding: 3px;
+  width: 250px;
+  height: 40px;
+  margin-left: 50px;
+}
+.wrapper .login form button {
+  background-color: #4CB5F9;
+  color: white;
+  font-size: 13px;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 50px;
+  margin-top: 15px;
+  font-weight: bold;
+  width: 250px;
+}
+.wrapper .login form .or {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+}
+.wrapper .login form .or .line {
+  background-color: #DBDBDB;
+  height: 1px;
+  width: 100px;
+}
+.wrapper .login form .or .text {
+  font-size: 14px;
+  color: #737373;
+  padding: 5px;
+}
+.wrapper .login form .facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 25px;
+}
+.wrapper .login form .facebook i {
+  color: #0095F6;
+  font-size: 23px;
+}
+.wrapper .login form .facebook a {
+  color: #0095F6;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.wrapper .login form p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #00376B;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 125px;
+}
+.wrapper .login .sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 23px;
+  border: 1px solid #DBDBDB;
+}
+.wrapper .login .sign-up p {
+  line-height: 18px;
+  font-size: 15px;
+}
+.wrapper .login .sign-up a {
+  color: #0095F6;
+  font-size: 15px;
+  font-weight: bold;
+}
+.wrapper .login .app {
+  margin-top: 20px;
+}
+.wrapper .login .app p {
+  margin: 0 0 10px 120px;
+  font-size: 14px;
+}
+.wrapper .login .app .apps {
+  margin-top: 0px;
+  margin-left: 50px;
+  display: flex;
+  height: 40px;
+  gap: 10px;
+}
+
+footer {
+  transform: translateY(-100px);
+  display: flex;
+  flex-direction: column;
+}
+footer .links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin-left: 400px;
+}
+footer .links a {
+  color: #737373;
+  font-size: 12px;
+}
+@media (max-width: 880px) {
+  footer .links {
+    margin-left: 10px;
+  }
+}
+footer .bottom {
+  display: flex;
+  align-items: center;
+  margin-left: 700px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media (max-width: 880px) {
+  footer .bottom {
+    margin-left: 300px;
+  }
+}
+footer .bottom a {
+  font-size: 13px;
+  color: #737373;
+}
+footer .bottom i {
+  font-size: 25px;
+  color: #737373;
+}/*# sourceMappingURL=style.css.map */
